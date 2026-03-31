@@ -1,9 +1,9 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import {BookClient} from "./BookClient.js";
 
-const api_URL = "https://69c8836f68edf52c954dd039.mockapi.io/books/v1"
+async function main(){
+    const bookClient = new BookClient()
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`)
-})
+    const allBooks = await bookClient.getBooks()
+    const book1 = await bookClient.getBook("1")
+}
+main()

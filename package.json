@@ -2,7 +2,7 @@
   "name": "oit_qa_challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "BookClient.js",
   "scripts": {
     "test": "jest"
   },
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Jtoosh/oit_qa_challenge/issues"
   },
@@ -23,8 +23,5 @@
     "@babel/preset-env": "^7.29.2",
     "babel-jest": "^30.3.0",
     "jest": "^30.3.0"
-  },
-  "dependencies": {
-    "express": "^5.2.1"
   }
 }
