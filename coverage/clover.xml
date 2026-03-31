@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1774975172501" clover="3.2.0">
-  <project timestamp="1774975172501" name="All files">
+<coverage generated="1774976490448" clover="3.2.0">
+  <project timestamp="1774976490448" name="All files">
     <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="20" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="1" files="2" classes="2"/>
     <file name="Book.js" path="/Users/james/Projects/code/active/oit_qa_challenge/Book.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -13,14 +13,14 @@
     <file name="BookClient.js" path="/Users/james/Projects/code/active/oit_qa_challenge/BookClient.js">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="21" count="11" type="stmt"/>
-      <line num="22" count="11" type="stmt"/>
-      <line num="34" count="11" type="stmt"/>
-      <line num="36" count="11" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="15" count="12" type="stmt"/>
+      <line num="16" count="12" type="stmt"/>
+      <line num="27" count="23" type="stmt"/>
+      <line num="28" count="23" type="stmt"/>
     </file>
   </project>
 </coverage>

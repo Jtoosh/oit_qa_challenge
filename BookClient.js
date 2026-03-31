@@ -3,18 +3,12 @@ export class BookClient{
 
     async getBooks(){
         const requestURL = this.endpointURL + "/Book"
-
         return await fetch(requestURL)
-
-
     }
 
     async getBook (id){
         const requestURL = this.endpointURL + `/Book/${id}`
-
          return await fetch(requestURL)
-
-
     }
 
     async postBook(book){
@@ -27,12 +21,10 @@ export class BookClient{
             },
             body: JSON.stringify(book)
         })
-
     }
 
     async deleteBook(id){
         const requestURL = this.endpointURL + `/Book/${id}`
-
         return fetch(requestURL, {
             method: "DELETE"
         })
