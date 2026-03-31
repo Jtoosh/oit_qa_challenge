@@ -19,7 +19,7 @@ describe("Get tests", () => {
 
     })
     afterAll(async () => {
-        for (let i = 0; i < testData.length; i++) {
+        for (let i = 1; i <= testData.length; i++) {
             await bookClient.deleteBook(`${i}`)
         }
     })
