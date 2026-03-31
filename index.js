@@ -1,9 +1,12 @@
 import {BookClient} from "./BookClient.js";
 
 async function main(){
-    const bookClient = new BookClient()
+    const bookClient = new BookClient();
 
-    const allBooks = await bookClient.getBooks()
-    const book1 = await bookClient.getBook("1")
+    const allBooks = await bookClient.getBooks();
+    const book1 = await bookClient.getBook("1");
+
+    console.log(allBooks);
+    console.log(book1);
 }
-main()
+main();
