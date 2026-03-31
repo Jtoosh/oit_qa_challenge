@@ -4,22 +4,22 @@ export class BookClient{
     async getBooks(){
         const requestURL = this.endpointURL + "/Book"
 
-        const rawResponse = await fetch(requestURL)
-        return await rawResponse.json()
+        return await fetch(requestURL)
+
 
     }
 
     async getBook (id){
         const requestURL = this.endpointURL + `/Book/${id}`
 
-        const rawResponse = await fetch(requestURL)
+         return await fetch(requestURL)
 
-        return await rawResponse.json()
+
     }
 
     async postBook(book){
         const requestURL = this.endpointURL + "Book"
-        const rawResponse = await fetch(requestURL, {
+        return await fetch(requestURL, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -27,13 +27,13 @@ export class BookClient{
             },
             body: JSON.stringify(book)
         })
-        return await rawResponse.json()
+
     }
 
     async deleteBook(id){
         const requestURL = this.endpointURL + `/Book/${id}`
 
-        await fetch(requestURL, {
+        return fetch(requestURL, {
             method: "DELETE"
         })
     }
