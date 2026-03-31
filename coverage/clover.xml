@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1774976490448" clover="3.2.0">
-  <project timestamp="1774976490448" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="20" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="1" files="2" classes="2"/>
-    <file name="Book.js" path="/Users/james/Projects/code/active/oit_qa_challenge/Book.js">
+<coverage generated="1774979233429" clover="3.2.0">
+  <project timestamp="1774979233429" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="16" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
+    <file name="Book.js" path="/Users/james/Projects/code/active/oit_qa_challenge/src/Book.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="7" count="11" type="stmt"/>
       <line num="8" count="11" type="stmt"/>
@@ -10,17 +10,13 @@
       <line num="13" count="1" type="stmt"/>
       <line num="26" count="10" type="stmt"/>
     </file>
-    <file name="BookClient.js" path="/Users/james/Projects/code/active/oit_qa_challenge/BookClient.js">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+    <file name="BookClient.js" path="/Users/james/Projects/code/active/oit_qa_challenge/src/BookClient.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="2" count="1" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="15" count="12" type="stmt"/>
-      <line num="16" count="12" type="stmt"/>
-      <line num="27" count="23" type="stmt"/>
-      <line num="28" count="23" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="13" count="12" type="stmt"/>
+      <line num="24" count="13" type="stmt"/>
     </file>
   </project>
 </coverage>

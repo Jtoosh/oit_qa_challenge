@@ -1,6 +1,6 @@
 import {describe, it, beforeAll, expect, afterAll} from "@jest/globals"
-import {BookClient} from "./BookClient.js";
-import {Book, testData} from "./Book.js";
+import {BookClient} from "../src/BookClient.js";
+import {Book, testData} from "../src/Book.js";
 
 const api_URL = "https://69c8836f68edf52c954dd039.mockapi.io/books/v1/Book";
 const timeout = 10000
@@ -22,7 +22,7 @@ describe("API Tests", () => {
         }
     }, timeout)
     //Extra test, not included in specs
-    it("gets a list of books", async () => {
+    it("Gets a list of books", async () => {
         const response = await bookClient.getBooks();
         const content = await response.json();
         expect(response.status).toBe(200);
@@ -47,11 +47,15 @@ describe("API Tests", () => {
     }, timeout)
     it("Posts an invalid book", async () =>{
         const newBook = {
-            title: "Title"
-        };
 
+        };
         const response = await bookClient.postBook(newBook);
         expect(response.status).toBe(400);
+    }, timeout),
+    it("Fails to delete nonexistant id", async () => {
+        const idToDelete = '100000'
+        const response = await bookClient.deleteBook(idToDelete)
+        expect(response.status).toBe(404)
     }, timeout)
     afterAll(async () => {
         const response = await bookClient.getBooks();

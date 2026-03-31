@@ -2,7 +2,7 @@
   "name": "oit_qa_challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "BookClient.js",
+  "main": "src/BookClient.js",
   "scripts": {
     "test": "jest"
   },
